@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+        var studentname=[];
+        console.log(studentname)
+        var string= [ "Huma" , "karachi" ,  "cricket"]
+        console.log(string)
+        var num= [ "20" , "39" ,  "100"];
+        console.log(num)
+        var boolean=[ true , false];
+        console.log(boolean)
+        var mixedArray = ["Alice", 25, true, { city: "Karachi" }, [1, 2, 3]];
+        console.log(mixedArray)
+        var education = ["1)SSC" , "2)HSC" , "3)BCS", "4)BS" , "5)BCOM" , "6)MS" , "7)M.Phill." , "PhD"]
+        console.log(education) 
+        
+        var name=['Micheal' , 'John' , 'Tony']
+        var score=[320,230,480]
+        var totalmarks=500;
+        console.log("score of" + name[0] + "is" + score[0] + "percentage" + score[0]*100/totalmarks );
+        console.log("score of" + name[1] + "is" + score[1] + "percentage" + score[1]*100/totalmarks );
+        console.log("score of" + name[2] + "is" + score[2] + "percentage" + score[2]*100/totalmarks )
+        
+        
+        var colors=['red' , 'blue' ,  'orange' , 'pink' , 'purple' ,  'brown']
+        color1.unshift( prompt("Enter first color"))
+        color2.unshift(prompt("enter 2nd color"))
+        colors.unshift( prompt("Enter the color which you want to add at begining"))
+        colors.push( prompt("Enter the color which you want to add at the end"))
+        colors.push( prompt("Enter the two values which you want to add at  begining"))
+        colors.unshift( prompt("enter color you want to delete at 1st"))
+
+        console.log(colors)
+        // console.log(color1 , color2)
+
+
+        // Function to collect and sort student scores
+function sortStudentScores() {
+    const numStudents = prompt("Enter the number of students:");
+    const scores = [];
+
+    // Collect scores from the user
+    for (let i = 0; i < numStudents; i++) {
+        const score = parseInt(prompt(`Enter score for student ${i + 1}:`));
+        scores.push(score);
+    }
+
+    // Sort the scores in ascending order
+    scores.sort((a, b) => a - b);
+
+    // Output the sorted scores
+    console.log("Sorted scores:", scores);
+}
+
+// Call the function to execute
+sortStudentScores();
+
+
+// Initialize an array with city names
+const cities = ["New York", "Los Angeles", "Chicago", "Houston", "Phoenix"];
+
+// Create an array to hold selected cities
+const selectedCities = [];
+
+// Copy 3 elements from the cities array
+for (let i = 0; i < 3; i++) {
+    selectedCities.push(cities[i]);
+}
+
+// Output the selected cities
+console.log("Selected Cities:", selectedCities);
+
+// Initialize the array
+var arr = ["This ", "is ", "my ", "cat"];
+
+// Create a single string using the join method
+var result = arr.join(''); // Use '' for no separator, or add a space if desired
+
+// Output the result
+console.log(result);
+
+// Initialize an empty array
+var fifoQueue = [];
+
+// Function to add values to the queue
+function enqueue(value) {
+    fifoQueue.push(value);
+}
+
+// Function to remove values from the queue (FIFO)
+function dequeue() {
+    return fifoQueue.shift();
+}
+
+// Adding values to the queue
+enqueue("First");
+enqueue("Second");
+enqueue("Third");
+
+// Output the current queue
+console.log("Current Queue:", fifoQueue);
+
+// Removing values from the queue
+console.log("Dequeued:", dequeue()); // Removes "First"
+console.log("Dequeued:", dequeue()); // Removes "Second"
+
+// Output the remaining queue
+console.log("Remaining Queue:", fifoQueue);
+
+
+// Initialize an empty array
+var lifoStack = [];
+
+// Function to add values to the stack
+function push(value) {
+    lifoStack.push(value);
+}
+
+// Function to remove values from the stack (LIFO)
+function pop() {
+    return lifoStack.pop();
+}
+
+// Adding values to the stack
+push("First");
+push("Second");
+push("Third");
+
+// Output the current stack
+console.log("Current Stack:", lifoStack);
+
+// Removing values from the stack
+console.log("Popped:", pop()); // Removes "Third"
+console.log("Popped:", pop()); // Removes "Second"
+
+// Output the remaining stack
+console.log("Remaining Stack:", lifoStack);
+
+// Array of phone manufacturers
+var manufacturers = ["Apple", "Samsung", "Motorola", "Nokia", "Sony", "Haier"];
+
+// Create the dropdown/select menu using document.write()
+document.write('<label for="phones">Choose a phone manufacturer:</label>');
+document.write('<select id="phones">');
+
+// Loop through the array to create options
+for (var i = 0; i < manufacturers.length; i++) {
+    document.write('<option value="' + manufacturers[i] + '">' + manufacturers[i] + '</option>');
+}
+
+document.write('</select>');
+        </script>
+</body>
+</html>

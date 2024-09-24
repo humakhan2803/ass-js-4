@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+    <script>
+
+// Get user input
+var userInput = prompt("Enter a character: ");
+
+// Function to check the character type
+function checkCharacter(character) {
+    if (character.length !== 1) {
+        return "Enter a single character.";
+    }
+
+    var asciiCode = character.charCodeAt(0);
+
+    if (asciiCode >= 48 && asciiCode <= 57) {
+        return "Number";
+    } else if (asciiCode >= 65 && asciiCode <= 90) {
+        return "Uppercase letter";
+    } else if (asciiCode >= 97 && asciiCode <= 122) {
+        return "Lowercase letter";
+    } else {
+        return "Not a number or letter";
+    }
+}
+
+// Log the result
+console.log(checkCharacter(userInput));
+
+
+var num1 = +prompt("enter first num")
+var num2= +prompt("enter second number")
+if(num1===num2){
+    console.log("both numbers are equal")
+}
+else if(num1<num2){
+console.log(num1+ " " + "is less then " + " " + num2) 
+}
+else if(num1>num2){
+    console.log(num1 + " " + "is greater than " + " " + num2)
+}
+else{
+    console.log("invalid value")
+}
+var integer = +prompt("enter any integer")
+if(integer>0){
+    console.log(integer + " " + "is positive integer")
+}
+else if(integer<0){
+console.log(integer + " " + "is negetive integer") 
+}
+else if(integer===0){
+    console.log(integer + "is integer only")
+}
+else{
+    console.log("invalid value")
+}
+
+var vowels = prompt("enter any alphabet")
+var arr = ["a" , "e" , "i" , "o" , "u"] 
+if(arr.includes(vowels)){
+    console.log(vowels + " "+ "is a vowel")
+}
+else(
+    console.log(vowels + " " + "is not a vowel")
+)
+
+var password = prompt("Enter a correct password");
+correctpass = "hello12345";
+if(password===correctpass){
+    console.log("you entered correct password")
+}
+else{
+    console.log("incorrect password")
+}
+
+var greeting;
+var hour = 13;
+
+if (hour < 18) {
+    greeting = "Good day";
+} else {
+    greeting = "Good evening";
+}
+var time= +prompt("enter time")
+if(time>=0 && time<1200){
+    console.log("Good morning")
+}
+else if(time >= 1200 && time<1700 ){
+    console.log("Good afternoon")
+}
+else if(time >= 1700 && time<2100 ){
+    console.log("Good evening")
+}
+else if(time >= 2100 && time<2159 ){
+    console.log("Good evening")
+}
+else{
+    console.log("incorrect value")
+}
+
+
+
+
+    </script>
+
+
+</body>
+</html>
